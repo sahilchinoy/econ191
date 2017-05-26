@@ -1,0 +1,38 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Impact of campaign spending. \label{table:breakdown}}
+\begin{tabular}{l*{3}{cc}}
+\toprule
+                    &\multicolumn{2}{c}{(1)}           &\multicolumn{2}{c}{(2)}           &\multicolumn{2}{c}{(3)}           \\
+                    &\multicolumn{2}{c}{dem\_vote}      &\multicolumn{2}{c}{d\_dem\_vote}    &\multicolumn{2}{c}{d\_dem\_vote}    \\
+\midrule
+Incumbent communications&       -0.54\sym{*}  &      (0.22)&       -0.26         &      (0.14)&       -0.94         &      (0.87)\\
+Incumbent ads       &        0.17         &      (0.12)&        0.12         &      (0.09)&       -0.32         &      (0.43)\\
+Incumbent information&        0.06         &      (0.17)&        0.17         &      (0.12)&       -0.06         &      (0.51)\\
+Incumbent fundraising&        0.66\sym{*}  &      (0.30)&        0.12         &      (0.24)&        0.81         &      (0.75)\\
+Incumbent overhead  &       -0.65         &      (0.53)&       -0.16         &      (0.27)&        2.85         &      (2.40)\\
+Incumbent contributions&        0.44         &      (0.40)&        0.10         &      (0.15)&       -0.87         &      (2.46)\\
+Challenger communications&       -0.67\sym{***}&      (0.20)&       -0.21         &      (0.13)&       -0.40         &      (0.48)\\
+Challenger ads      &       -0.50\sym{**} &      (0.16)&       -0.37\sym{***}&      (0.11)&        0.48         &      (0.36)\\
+Challenger information&       -0.19         &      (0.18)&        0.14         &      (0.12)&        0.90\sym{*}  &      (0.40)\\
+Challenger fundraising&        0.10         &      (0.21)&        0.03         &      (0.13)&       -0.09         &      (0.41)\\
+Challenger overhead &        0.55\sym{**} &      (0.20)&        0.10         &      (0.14)&       -0.19         &      (0.60)\\
+Challenger contributions&       -0.21         &      (0.18)&       -0.16         &      (0.15)&       -0.12         &      (0.42)\\
+Open-seat communications&        0.38\sym{*}  &      (0.15)&        0.08         &      (0.13)&       -0.53         &      (0.35)\\
+Open-seat ads       &       -0.04         &      (0.12)&        0.02         &      (0.09)&       -0.07         &      (0.38)\\
+Open-seat information&        0.23         &      (0.17)&        0.06         &      (0.14)&       -0.58         &      (0.55)\\
+Open-seat fundraising&        0.62\sym{***}&      (0.15)&        0.33\sym{**} &      (0.12)&       -0.01         &      (0.47)\\
+Open-seat overhead  &       -0.24         &      (0.21)&       -0.22         &      (0.17)&        0.75         &      (0.45)\\
+Open-seat contributions&        0.41\sym{**} &      (0.13)&        0.00         &      (0.11)&       -0.79         &      (0.67)\\
+Incumbency          &       13.29\sym{***}&      (1.21)&        3.30\sym{*}  &      (1.39)&      -31.07         &     (28.65)\\
+District alignment  &        0.25\sym{***}&      (0.03)&                     &            &                     &            \\
+Constant            &       37.69\sym{***}&      (1.79)&                     &            &                     &            \\
+\midrule
+Observations        &         527         &            &         334         &            &          43         &            \\
+Adjusted \(R^{2}\)  &        0.84         &            &        0.11         &            &       -0.03         &            \\
+\bottomrule
+\multicolumn{7}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{7}{l}{\footnotesize Dependent variable is Democratic vote share. Year fixed effects absorbed.}\\
+\multicolumn{7}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}

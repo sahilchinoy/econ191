@@ -1,0 +1,34 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Impact of campaign spending. \label{table:reg1}}
+\begin{tabular}{l*{6}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}\\
+                    &\multicolumn{1}{c}{dem\_vote}&\multicolumn{1}{c}{dem\_vote}&\multicolumn{1}{c}{d\_dem\_vote}&\multicolumn{1}{c}{d\_dem\_vote}&\multicolumn{1}{c}{d\_dem\_vote}&\multicolumn{1}{c}{d\_dem\_vote}\\
+\midrule
+Incumbent spending  &        0.03         &        0.03         &       -0.11         &       -0.12         &       -0.48         &       -0.28         \\
+                    &      (0.08)         &      (0.08)         &      (0.13)         &      (0.10)         &      (1.61)         &      (0.85)         \\
+\addlinespace
+Challenger spending &       -0.52\sym{***}&       -0.65\sym{***}&       -0.29\sym{***}&       -0.29\sym{***}&        0.01         &        0.09         \\
+                    &      (0.09)         &      (0.10)         &      (0.06)         &      (0.07)         &      (0.17)         &      (0.20)         \\
+\addlinespace
+Open-seat spending  &        1.05\sym{***}&        1.11\sym{***}&        0.15\sym{*}  &        0.13         &       -0.12         &       -0.23         \\
+                    &      (0.06)         &      (0.06)         &      (0.07)         &      (0.07)         &      (0.17)         &      (0.13)         \\
+\addlinespace
+Incumbency          &       13.62\sym{***}&       13.77\sym{***}&        5.20\sym{**} &        4.85\sym{***}&        5.65         &        1.34         \\
+                    &      (1.10)         &      (1.05)         &      (1.91)         &      (1.43)         &     (22.94)         &     (10.53)         \\
+\addlinespace
+District alignment  &        0.31\sym{***}&        0.31\sym{***}&                     &                     &                     &                     \\
+                    &      (0.04)         &      (0.04)         &                     &                     &                     &                     \\
+\addlinespace
+Constant            &       35.10\sym{***}&       34.79\sym{***}&                     &                     &                     &                     \\
+                    &      (2.04)         &      (2.05)         &                     &                     &                     &                     \\
+\midrule
+Observations        &         527         &         527         &         334         &         334         &          43         &          43         \\
+Adjusted \(R^{2}\)  &        0.81         &        0.82         &        0.08         &        0.08         &       -0.05         &       -0.02         \\
+\bottomrule
+\multicolumn{7}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{7}{l}{\footnotesize Dependent variable is Democratic vote share. Year fixed effects absorbed.}\\
+\multicolumn{7}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}
