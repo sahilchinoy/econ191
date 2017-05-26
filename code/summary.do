@@ -53,3 +53,8 @@ tabout incumbent party using "../tex/summary.tex", cells(count tot sd tot ///
 corr logtot logcomm logads loginfo logfnd logoverhead logcontrib
 quietly corrtex logtot logcomm logads loginfo logfnd logoverhead logcontrib, ///
 	file(../tex/corr.tex) replace
+	
+* Scatterplot of ad spending vs total spending
+drop if logads == 0
+scatter logads logtot, ytitle(Log ad spending) xtitle(Log total spending)
+graph export ../charts/ads.pdf, replace

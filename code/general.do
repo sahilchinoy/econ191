@@ -4,6 +4,20 @@ clear
 
 insheet using ../data/races.csv
 
+* Scatterplot of vote share versus spending difference
+
+preserve
+
+keep if incumbent_logtot != 0
+keep if challenger_logtot != 0
+
+gen diff = incumbent * (incumbent_logtot - challenger_logtot) + open_logtot
+
+scatter dem_vote diff, ytitle(Democratic vote share) xtitle(Difference in log spending)
+graph export ../charts/diff.pdf, replace
+
+restore
+
 drop if missing(dem_name)
 drop if dem_name == ""
 
@@ -23,7 +37,6 @@ preserve
 ********************************
 * Un-differenced specification *
 ********************************
-
 
 eststo clear
 
