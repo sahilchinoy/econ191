@@ -1,6 +1,8 @@
-Economics 191: Topics in Economic Research / Spring 2017 / UC Berkeley
+## Economics 191: Topics in Economic Research / Spring 2017 / UC Berkeley
 
 For this research seminar, I conducted an analysis of the effectiveness of campaign spending in California using new data from the [California Civic Data Coalition](http://www.californiacivicdata.org/). The results corroborate findings at the federal level: campaign spending in California Assembly races, regardless of category and accounting for measurement error, is remarkably ineffective. This means that the puzzle of why candidates continue to spend money on campaigning remains. The sole exception is advertising spending for challengers, which lends support to theoretical models of campaign finance that see campaign spending as directly informative.
+
+If you just want to see the final paper, head to `paper/paper.pdf`.
 
 The directory structure is as follows:
 - `data` contains raw and processed data from [CAL-ACCESS](http://cal-access.sos.ca.gov/) (cleaned up by CCDC) and [OpenElections](http://openelections.net/)
